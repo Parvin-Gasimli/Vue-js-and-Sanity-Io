@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       loading: true,
-      query: `*[_type == 'category']`,
+      query: `*[_type == 'category'] | order(_createdAt)`,
       apidata: []
     }
   },
